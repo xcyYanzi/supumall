@@ -1,0 +1,5 @@
+div,p{margin:0;padding:0;}
+#top{width:100%;height:104px;background: #f2f2f2;}
+#t-con,{width:1155px;margin:0 auto;}
+#content{width:100%,height:480px;}
+#login{background: url(../img/login/login-bg.jpg) no-repeat 0 0 ;width:1155px;height:480px;margin: 0 auto;background-size: cover;}
