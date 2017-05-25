@@ -1,5 +1,340 @@
-div,p{margin:0;padding:0;}
-#top{width:100%;height:104px;background: #f2f2f2;}
-#t-con,{width:1155px;margin:0 auto;}
-#content{width:100%,height:480px;}
-#login{background: url(../img/login/login-bg.jpg) no-repeat 0 0 ;width:1155px;height:480px;margin: 0 auto;background-size: cover;}
+html,body,div,p,span,input,form{
+	margin:0;
+	padding:0;
+	}
+#top{
+	width:100%;
+	height:84px;
+	background: #f2f2f2;
+	padding-top:20px;
+	}
+#t-con{
+	width:1200px;
+	margin:0 auto;
+}
+#t-con img{float:left;}
+#t-con p{
+	float:left;
+	margin-left:36px;
+	padding-left:30px;
+	border-left:1px solid #dbdbdb;
+	height: 52px;
+	font-size: 24px;
+	line-height: 52px;
+}
+
+
+#content{
+	width:100%;
+	height:480px;
+	background: #e4004b;
+	
+}
+#login{
+	width:1170px;
+	height:480px;
+	background: url(../img/login/login-bg.jpg) no-repeat -295px 0;
+	background-size: cover;
+	margin: 0 auto;
+	padding-right: 30px;
+}
+
+/*登录内容区域样式*/
+#main{
+	
+	width:296px;
+	height: 336px;
+	background: #fff;
+	float: right;
+	margin-top: 46px;
+	padding: 10px 22px;
+	padding-bottom: 35px;
+	position: relative;
+	
+	
+}
+#main h3{
+	float:left;
+}
+#main span{
+	float: right;
+	margin-top: 22px;
+	font-size: 12px;
+	color: #999999;
+}
+#main span a{
+	text-decoration: none;
+	color:#137ce9;
+	cursor: pointer;
+}
+#m-con{
+	padding-top:30px;
+	height:275px;	
+}
+#m-con #logForm{
+	padding-top:40px;
+	width:297px;
+	height:275px;
+}
+#logForm input:nth-of-type(1),#logForm input:nth-of-type(2){
+	width:252px;
+	height:40px;
+	background: #f9f9f9;
+	border: 0;
+	color:#999999;
+	float: right;
+}
+#logForm div:nth-of-type(1),#logForm div:nth-of-type(2){
+	height:40px;
+	width:287px;
+	background: #f9f9f9;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+#logForm div:nth-of-type(1) span,#logForm div:nth-of-type(2) span{
+	float: none;
+	font-family:'iconfont';
+	line-height: 40px;
+	font-size: 16px;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+
+#logForm #huadong{
+	background:#f29dba;
+	width:290px;
+	height:34px;
+	padding:3px;
+}
+#logForm #huadong p{
+	float:right;
+	width:200px;
+	font-size: 14px;
+	color:#fff;
+	line-height: 32px;
+}
+#logForm #huadong #move{
+	float: left;
+	width:50px;
+	height:34px;
+	border-radius:5px;
+	background: #fff;
+	padding: 0;
+	z-index: 1;
+}
+#logForm #check{
+	width:297px;
+	height:40px;
+	padding: 0;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+#logForm #check input:nth-of-type(1),#logForm #check input:nth-of-type(2){
+	width:15px;
+	float: left;
+	background: none;
+}
+#logForm #check span{
+	font-size: 12px;
+	float: left;
+	margin:0 13px;
+	height:40px;
+	line-height: 40px;
+}
+#logForm #last input:nth-of-type(1){
+	width:297px;
+	height:40px;
+	background: #e5004b;
+	color:#fff;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+#main p{
+	font-size: 14px;
+	color:#999999;
+	height:30px;
+	line-height:30px;
+	margin-bottom: 10px;	
+}
+#main p img{
+	position:absolute;
+	margin:5px;
+}
+#main p img:nth-of-type(1){
+	left:115px;
+}
+#main p img:nth-of-type(2){
+	left:145px;
+}
+
+
+/*注册页面*/
+#reg{
+	position: relative;
+	width:296px;
+	height: 336px;
+	background: #fff;
+	float: right;
+	margin-top: 46px;
+	padding: 10px 22px;
+	padding-bottom: 35px;
+	display: none;
+	left:-400px;
+	
+}
+#reg h3{
+	float:left;
+}
+#reg span{
+	float: right;
+	margin-top: 22px;
+	font-size: 12px;
+	color: #999999;
+}
+#reg span a{
+	text-decoration: none;
+	color:#137ce9;
+	cursor: pointer;
+}
+#r-con{
+	padding-top:30px;
+	height:275px;	
+}
+#r-con #regForm{
+	padding-top:40px;
+	width:297px;
+	height:275px;
+}
+#regForm input:nth-of-type(1),#regForm input:nth-of-type(2){
+	width:252px;
+	height:40px;
+	background: #f9f9f9;
+	border: 0;
+	color:#999999;
+	float: right;
+}
+#regForm div:nth-of-type(1),#regForm div:nth-of-type(2){
+	height:40px;
+	width:287px;
+	background: #f9f9f9;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+#regForm div:nth-of-type(3),#regForm div:nth-of-type(4){
+	height:40px;
+	width:176px;
+	background: #f9f9f9;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+#regForm #num,#regForm #telNum{
+	width:130px;
+	height:40px;
+	background: #f9f9f9;
+	border: 0;
+	color:#999999;
+	float: right;
+}
+#regForm #btn1{
+	width:104px;
+	height:40px;
+	background: #e5004b;
+	color: #fff;
+	position: absolute;
+	right:-110px;
+	
+}
+#regForm #yzm{
+	width:95px;
+	height:40px;
+	background: #cecece;
+	color: #fff;
+	position: absolute;
+	right:-110px;
+	top:0;
+	
+}
+
+#regForm div:nth-of-type(3),#regForm div:nth-of-type(4){
+	position: relative;
+}
+
+#regForm div:nth-of-type(1) span,#regForm div:nth-of-type(2) span,#regForm div:nth-of-type(3) span,#regForm div:nth-of-type(4) span{
+	float: none;
+	font-family:'iconfont';
+	line-height: 40px;
+	font-size: 16px;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+#regForm #rules{
+	width:297px;
+	height:40px;
+	padding: 0;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+#regForm #rules #ckb{
+	width:15px;
+	float: left;
+	background: none;
+}
+#regForm #rules span{
+	font-size: 12px;
+	float: left;
+	margin:0 13px;
+	height:40px;
+	line-height: 40px;
+}
+
+#regForm #last input:nth-of-type(1){
+	width:297px;
+	height:40px;
+	background: #e5004b;
+	color:#fff;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+footer{
+	width:100%;
+	height:121px;
+	background:#f3f3f3;
+	text-align: center;
+}
+footer p{
+	font-size: 12px;
+	line-height: 54px;
+	color:#999999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
