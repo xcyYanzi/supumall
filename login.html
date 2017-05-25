@@ -27,7 +27,7 @@
 								<span>&#xe61a;<input type="text" name="username" placeholder="邮箱、手机号、账号"/></span>
 							</div>
 							<div>
-								<span>&#xe635;<input type="text" name="password" placeholder="密码" /></span>
+								<span>&#xe635;<input type="password" name="password" id="psw1"/><label>密码</label></span>
 							</div>
 							<div id="huadong">
 								<div id="move">
@@ -45,7 +45,7 @@
 								<span>忘记密码了？</span>
 							</div>
 						<div id="last">
-							<input type="button" value="登 录" />
+							<input type="button" value="登 录" id="btn1" />
 						</div>
 						</form>
 					</div>
@@ -62,10 +62,12 @@
 					<div id="r-con">
 						<form id="regForm">
 							<div>
-								<span>&#xe61a;<input type="text" name="username" placeholder="邮箱、手机号"/></span>
+								<span>&#xe61a;<input type="text" name="username" placeholder="手机号" id="txt2"/></span>
 							</div>
 							<div>
-								<span>&#xe635;<input type="text" name="password" placeholder="6-16位字符，必须包含英文字母和数字" /></span>
+								<span>&#xe635;<input type="password" name="password" id="psw2" />
+								<label>6-16位字符，必须包含英文字母和数字</label>
+								</span>
 							</div>
 							<div>
 								<span>&#xe649;<input type="text" id="num" placeholder="输入验证码" /></span>
@@ -80,7 +82,7 @@
 						</div>	
 							
 						<div id="last">
-							<input type="button" value="注册" />
+							<input type="button" value="注册" id="btn2"/>
 						</div>
 						</form>
 					</div>
@@ -98,5 +100,60 @@
 		</footer>
 	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		var oPsw = document.getElementById("psw2");
+		var oTxt = document.getElementById("txt2");
+		var oMove = document.getElementById("move");
+		var oHd = document.getElementById("huadong");
+		var oP = oHd.getElementsByTagName("p")[0];
+		oTxt.onchange = function(){
+			var pTxt = oTxt.value;
+			var reg = /^[0-9]{11}$/;
+			if(reg.test(pTxt)){
+			//	alert("账户名称格式正确，请填密码");
+			}else{
+				alert("账户名称格式错误，请重新填写");
+				return;
+			}
+		}
+			oPsw.onchange = function(){
+			var pTxt = oPsw.value;
+			var reg = /^[a-zA-Z0-9]{6,20}$/;
+			if(reg.test(pTxt)){
+			//	alert("密码格式正确，请填验证码");
+			
+			}else{
+				alert("密码格式错误，请重新填写密码");
+				return;
+			}
+		}
+		
+		oMove.onmousedown = function(e){
+			var evt = e || event;
+			var _left = evt.offsetX;
+			document.onmousemove = function(e){
+				var evt = e || event;
+				var left = evt.clientX - _left - 950;
+				console.log(left);
+				
+				if(left<3){
+					left=3;
+				}
+				if(left>240){
+					left=240;
+					oHd.style.backgroundColor = "greenyellow";
+					oP.innerHTML = "验证通过";
+				}
+				oMove.style.left=left+"px";
+			}
+		}
+		document.onmouseup = function(){
+			document.onmousemove = null;
+			
+		}
+		
+		
+	</script>
 	</body>
 </html>

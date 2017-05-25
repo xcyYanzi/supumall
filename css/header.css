@@ -1,0 +1,142 @@
+header{
+	width:100%;
+	height:29px;
+	background: #333333;
+}
+
+#top{
+	width:1200px;
+	height:29px;
+	margin:0 auto;
+	color:#fff;
+	font-size: 12px;
+	line-height:29px;
+}
+#top p{
+	width:240px;
+	float: left;
+	margin-right:330px;
+}
+#top p a{
+	color:#e5004a;
+}
+
+#top p a:hover{
+	color:#fff;
+}
+#top ul{
+	position: relative;
+}
+#top ul li em{
+	float:right;
+}
+#top ul li{
+	float:left;
+	margin:0 15px;
+}
+#top ul li:hover{
+	cursor: pointer;
+}
+#top ul li:hover em:nth-of-type(1){
+	display: none;
+}
+#top ul li:hover em:nth-of-type(2){
+	font-style: normal;
+	display: block;
+	color:red;
+	margin-left: 5px;
+}
+#top ul li em:nth-of-type(1){
+	font-style: normal;
+	font-family: 'iconfont';
+	width:11px;
+	height:12px;
+	margin-left: 5px;
+}
+#top ul li em:nth-of-type(2){
+	display: none;
+	width:11px;
+	height:12px;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+#top ul li:nth-of-type(3) ul{
+	position: absolute;
+	background: #333333;
+	right:360px;
+	display: none;
+}
+#top ul li:nth-of-type(6) ul{
+	position: absolute;
+	background: #333333;
+	right:80px;
+	display: none;
+}
+#top ul li:nth-of-type(4) ul{
+	position: absolute;
+	background: #333333;
+	right:260px;
+	display: none;
+}
+#top ul li:nth-of-type(4) ul li img{
+	width:80px;
+	height:80px;
+	margin:5px 0;
+}
+#top ul li:nth-of-type(3) ul li,#top ul li:nth-of-type(4) ul li,#top ul li:nth-of-type(6) ul li{
+	float:none;
+}
+
+
+#top ul li:nth-of-type(3):hover ul{
+	display: block;
+}
+
+#top ul li:nth-of-type(4):hover ul{
+	display: block;
+}
+#top ul li:nth-of-type(6):hover ul{
+	display: block;
+}
+
+nav{
+	width:100%;
+	height:161px;
+	border-bottom: 2px solid #e5004a;
+}
+
+#nav-con{
+	width:1200px;
+	height:126px;
+	margin:0 auto;
+	padding-top:35px;
+}
+
+#con1{
+	height:90px;
+}
+
+#content  img{
+	width:200px;
+	float:left;
+	border: 0;
+	
+}
+ #form1{
+	width:400px;
+	float:left;
+}
+
+
+
+
+
+
+
