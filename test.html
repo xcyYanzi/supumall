@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	    <style type="text/css">
+	 .goodsList{
+	float:left;
+	margin:5px;
+}
+.goodsList .theme{
+	width:588px;
+	height:234px;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+ .goodsList .theme .active{
+	width:588px;
+	height:50px;
+	background: #fff ;
+	position: absolute;
+	left:0;
+	bottom:-55px;
+	border-bottom: 1px solid #cecece;
+	transition:all 1s;
+}
+ .goodsList .theme div:nth-of-type(2){
+	position:absolute;
+	left:120px;
+	bottom:-40px;
+	color:#999999;
+	transition:all 2s;
+}
+
+ .goodsList .theme div:nth-of-type(3){
+	position:absolute;
+	left:400px;
+	bottom:-40px;
+	font-size: 20px;
+	color:#e5004a;
+	transition:all 2s;
+}
+
+.goodsList .theme:hover .active{
+	transform: translateY(-55px);
+	transition:all 1s;
+}
+
+.goodsList .theme:hover div:nth-of-type(2){
+	transform: translateY(-55px);
+	transition:all 2s;
+}
+.goodsList .theme:hover div:nth-of-type(3){
+	transform: translateY(-55px);
+	transition:all 2s;
+}
+.djs{width:300px;height:300px;border:1px solid #f00;}
+	    </style>
+	</head>
+	<body>
+		<!--<div class="goodsArea">
+			<!--<div class="goodsList">	
+				<div class="theme">
+				<img src="img/main2/main201.jpg" />	
+					<div class="active"><img src="img/main2/logo/m01.jpg"/></div>
+					<div>阿李罗特卖专场</div>
+					<div>宝宝成长的好玩伴</div>
+				</div>
+				<div class="djs"><span>倒计时</span></div>
+			</div>	-->
+		<!--</div>
+		<div class="goodsList">
+					<div class="theme">-->
+
+					<div class="djs" ></div>
+				
+		<script type="text/javascript">
+			
+//			function getTime(time1){
+//	 			timer = setInterval(getTim,1000);		
+//				function getTim(){
+//					
+//					
+//			}
+//			
+//		}
+//			function getTime(timel){
+//				_this = this;
+//				this.time =timel;
+//				this.timer = function(){
+//					timer = setInterval(this.getTim,1000);
+//				}
+//			}
+//			getTime.prototype.getTim = function(){
+//					var oDate1=new Date();
+//					var oDate2=new Date(_this.time);
+//					var cha=oDate2-oDate1;
+//					var hh=Math.floor(cha/(1000*60*60));
+//					var mm=Math.floor((cha%(1000*60*60))/(1000*60));
+//					var ss=Math.floor((cha-hh*1000*60*60-mm*1000*60)/1000);	
+//					hh=hh<10?"0"+hh:hh;
+//					mm=mm<10?"0"+mm:mm;
+//					ss=ss<10?"0"+ss:ss;
+//					var str=hh+":"+mm+":"+ss;
+//					
+//					if(cha<=1000){ //cha是毫秒，
+//						clearInterval(timer);
+//					}
+//					return str;
+//			}
+					
+			
+		/*	$(function(){
+				$.get("json/main02.json",function(data){
+					var data = data;
+					console.log(data.img1);
+					var html = template("tabs",data);
+					console.log(html);
+					document.getElementsByClassName("goodsArea")[0].innerHTML=html;
+					
+				})	
+			})*/
+			/*var ss= limitedTime("2017-5-28 18:00:00");
+			console.log(ss);			
+			var ss= getTime("2017-5-28 18:00:00");
+			 var timer=setInterval(getTime("2017-5-28 18:00:00"),1000);
+			 console.log(timer);*/
+			//var hh = ss()*/
+			
+	
+			var timer = setInterval(function(){
+				var str = timeSpike("2017-5-28 18:30:00")
+				document.getElementsByClassName("djs")[0].innerHTML =str;
+			},300)
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

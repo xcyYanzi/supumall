@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>登录页面</title>
-		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
 	</head>
 	<body>
 		<!--header-->
 		<div id="top">
 			<div id="t-con">
-				<img src="img/login/logo.jpg"/>
+				<img src="../img/login/logo.jpg"/>
 				<p>欢迎<span>登录</span></p>
 			</div>
 		</div>
@@ -27,11 +27,11 @@
 								<span>&#xe61a;<input type="text" name="username" placeholder="邮箱、手机号、账号"/></span>
 							</div>
 							<div>
-								<span>&#xe635;<input type="password" name="password" id="psw1"/><label>密码</label></span>
+								<span>&#xe635;<input type="password" name="password" id="psw1" placeholder="密码"/></span>
 							</div>
 							<div id="huadong">
 								<div id="move">
-									<img src="img/login/bg_draggable_qaptcha_1.png" onclick="return false;"/>
+									<img src="../img/login/bg_draggable_qaptcha_1.png" onclick="return false;"/>
 								</div>
 								<p>按住滑块拖动到最右边</p>
 							</div>
@@ -51,8 +51,8 @@
 					</div>
 					<p>
 						合作账户登录：
-						<img src="img/login/zhifubao.png" />
-						<img src="img/login/weibo.png" />
+						<img src="../img/login/zhifubao.png" />
+						<img src="../img/login/weibo.png"/>
 					</p>
 				</div>	
 				<!--注册页面-->
@@ -65,8 +65,8 @@
 								<span>&#xe61a;<input type="text" name="username" placeholder="手机号" id="txt2"/></span>
 							</div>
 							<div>
-								<span>&#xe635;<input type="password" name="password" id="psw2" />
-								<label>6-16位字符，必须包含英文字母和数字</label>
+								<span>&#xe635;<input type="password" name="password" id="psw2"  placeholder="6-16位字符，必须包含英文字母和数字"/>
+								
 								</span>
 							</div>
 							<div>
@@ -95,11 +95,11 @@
 		<!--footer-->
 		<footer>
 			<p>Copyright&copy;速普商城 2010-2016 All Right Reseved 鲁 ICP 证 09059644 号</p>
-			<img src="img/login/zhizhao.png" />
-			<img src="img/login/cnnic.png" />
+			<img src="../img/login/zhizhao.png" />
+			<img src="../img/login/cnnic.png" />
 		</footer>
-	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
 	
 	<script type="text/javascript">
 		var oPsw = document.getElementById("psw2");

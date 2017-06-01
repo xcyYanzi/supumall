@@ -1,4 +1,4 @@
-body,div,ul,li,p,img,a,span{
+body,div,ul,li,p,img,a,span,figure{
 	margin:0;
 	padding:0;
 	font-family: "microsoft yahei";
@@ -10,3 +10,22 @@ ul li{
 a{
 	text-decoration: none;
 }
+
+#mian{
+	width:100%;
+	min-height: 600px;
+	height: auto!important;
+	height: 600px;
+}
+#main:after{
+	content:".";
+	display: block;
+	clear: both;
+	height:0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+
+
+

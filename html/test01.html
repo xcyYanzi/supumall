@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body,
+			ul,
+			li {
+				padding: 0;
+				margin: 0;
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			#tab {
+				width: 390px;
+			}
+			
+			#tab .nav {
+				height: 32px;
+			}
+			
+			#tab .nav li {
+				float: left;
+				height: 32px;
+				line-height: 32px;
+				width: 20%;
+			}
+			#tab .list{
+				display: none;
+			}
+			#tab .list:first-child{
+				display: block;
+			}
+			#tab .con1 li {
+				float: left;
+				width: 33%;
+			}
+			
+			.clear {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="tab">
+				<ul class="nav">
+					<li>手机通讯</li>
+					<li>创意礼品</li>
+					<li>生活电器</li>
+					<li>坚果炒货</li>
+				</ul>
+			
+				<div id="content1"></div>
+			</div>
+			
+			
+			<script id="tabs" type="text/html">
+				<div class="con1">
+					
+						{{each imgsrc as value}}
+							<div class="list">
+							<ul>
+							{{each value as item}}
+								{{item[0]}}
+							{{/each}}
+							</ul>
+							</div>
+						{{/each}}
+					
+					
+				</div>
+				</script>
+			
+			<script type="text/javascript">
+			$(function(){
+				$.get("../json/main01.json",function(data){
+					var data = data;
+					console.log(data);
+					var html = template("tabs",{"list":data});
+					console.log(html);
+					document.getElementById("content1").innerHTML = html;
+					$(".nav li").on("mouseover",function(){
+						var index = $(this).index();
+						$(".list").eq(index).show().siblings().hide();
+					})	
+				})
+			})
+		</script>
+	</body>
+</html>

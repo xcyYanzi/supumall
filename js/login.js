@@ -15,14 +15,6 @@ $(function(){
 		}
 	})
 	
-	$("#psw1").keydown(function(){
-					$("label").hide();
-				})
-	
-	$("#psw2").keydown(function(){
-					$("label").hide();
-				})
-	
 	/*登录验证*/
 
 	$aInput1 = $("#logForm").find("input:not(:last)");
