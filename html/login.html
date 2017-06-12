@@ -154,6 +154,19 @@
 		}
 		
 		
+		/*----验证码--*/
+		var oYzm = document.getElementById("yzm");
+		var code="";
+		var str = "0123456789";
+		function getCode(){
+			for(var i=0;i<4;i++){
+				var rand =Math.floor(Math.random()*str.length);
+				code=code+rand;
+			}	
+			return code;
+		}
+		var ss = getCode();
+		oYzm.innerHTML = ss;
 	</script>
 	</body>
 </html>

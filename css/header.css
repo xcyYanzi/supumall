@@ -229,25 +229,52 @@ nav{
 	padding-left:15px;
 	float: left;
 	position: relative;
+	
 }
-
-
-/*导航部分*/
-.con2 .navList{
-	width:198px;
-	height:450px;
+.con2 .nav1 .navList li .area1{
 	position: absolute;
-	left:0;	
-	background:#e5004a;
-	padding-left:2px;
-	z-index: 1;
+	left:200px;
+	top:0px;
+	background: #fff;
+	width:670px;
+	height:448px;
+	z-index: 5;
+	border-right:1px solid #e5004a;
+	border-bottom:1px solid #e5004a;
+	display: none;
 }
+.con2 .nav1 .navList li .area1 div{
+	margin-left:-80px;
+}
+.con2 .nav1 .navList li .area1 div b{
+	font-weight: bold;
+	color:#666;
+	margin-right: 8px;
+	
+}
+
+.con2 .nav1 .navList li .area1 div a{
+	border-left:1px solid #cecece;
+	line-height: 22px;
+	padding:0 8px;
+	color: #666666;
+	
+}
+.con2 .nav1 .navList li .area1 div a:hover{
+	color:#e5004a;
+}
+
+.con2 .nav1 .navList li:hover .area1{
+	display: block;
+}
+/*导航部分*/
+
+
 .con2 .navList li{
 	height:41px;
 	width:183px;
 	padding-left:15px;
-	
-	
+
 }
 .con2 .navList li:nth-of-type(1) span{
 	float: left;
@@ -448,46 +475,7 @@ nav{
 	cursor: pointer;
 }
 
-.con2 li:nth-of-type(1) .area1{
-	background: #fff;
-	width:785px;
-	height:448px;
-	border-right:2px solid #e5004a;
-	border-bottom:2px solid #e5004a;
-	position:absolute;
-	left:200px;
-	top:0;
-	padding-left:15px;
-	color: #999999;
-	display: none;
-}
-.con2 li:nth-of-type(1):hover .area1 a{
-	color:#999999;
-	
-}
-.con2 li:nth-of-type(1) .area1 p{
-	font-weight: 600;margin-right:5px;
-	float:left;
-	font-size: 14px;
-}
-.con2 li:nth-of-type(1) .area1 a{
-	float: left;
-	color: #999999;
-	line-height: 38px;
-	border-left:1px solid #666666;
-	padding:0 5px;
-	
-}
 
-
-.con2 li:nth-of-type(1) .area1 a:hover{
-	color: #e5004a;
-} 
-
-.con2 li:nth-of-type(1):hover .area1{
-	display: block;
-	
-}
 
 #ban1{
 	width:1200px;

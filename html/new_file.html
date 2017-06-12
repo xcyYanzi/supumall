@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+		
+		<script type="text/javascript">
+	
+		
+	function timeSpike(endTime){
+		var oDate1=new Date();
+		var oDate2=new Date(endTime);
+		var cha=oDate2-oDate1;
+		var tt=Math.floor((cha/(1000*60*60*24)));
+		var hh=Math.floor((cha-tt*1000*60*60*24)/(1000*60*60));
+		var mm=Math.floor((cha%(1000*60*60))/(1000*60));
+		var ss=Math.floor((cha-tt*1000*60*60*24-hh*1000*60*60-mm*1000*60)/1000);	
+		tt=tt<10?"0"+tt:tt;
+		hh=hh<10?"0"+hh:hh;
+		mm=mm<10?"0"+mm:mm;
+		ss=ss<10?"0"+ss:ss;
+			var str="还有："+tt+"天"+hh+"时"+mm+"分"+ss+"秒";
+			return str;
+}
+	var oBox = document.getElementById("box");
+	var timer = setInterval(function(){
+	var str = timeSpike("2017-6-4 12:00:00")
+	oBox.innerHTML = str;
+		
+	},1000);
+	
+	
+	function setTime(time,name){
+			var timer1 = setInterval(function(){name.html(timeSpike(time))}, 1000);
+		}
+		setTime("2017-6-3 12:00:00",$(".time"));		
+		function timeSpike(endTime) {
+			var oDate1 = new Date();
+			var oDate2 = new Date(endTime);
+			var cha = oDate2 - oDate1;
+			var tt = Math.floor((cha / (1000 * 60 * 60 * 24)));
+			var hh = Math.floor((cha - tt * 1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+			var mm = Math.floor((cha % (1000 * 60 * 60)) / (1000 * 60));
+			var ss = Math.floor((cha - tt * 1000 * 60 * 60 * 24 - hh * 1000 * 60 * 60 - mm * 1000 * 60) / 1000);
+			tt = tt < 10 ? "0" + tt : tt;
+			hh = hh < 10 ? "0" + hh : hh;
+			mm = mm < 10 ? "0" + mm : mm;
+			ss = ss < 10 ? "0" + ss : ss;
+			var str = "还有：" + tt + "天" + hh + "时" + mm + "分" + ss + "秒";
+			return str;
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		</script>
+	</body>
+</html>

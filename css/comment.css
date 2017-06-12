@@ -11,6 +11,17 @@ a{
 	text-decoration: none;
 }
 
+
+.con2 .navList{
+	width:198px;
+	height:450px;
+	position: absolute;
+	left:0;	
+	background:#e5004a;
+	padding-left:2px;
+	z-index: 1;
+}
+
 #mian{
 	width:100%;
 	min-height: 600px;

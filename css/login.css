@@ -273,6 +273,8 @@ html,body,div,p,span,input,form{
 	position: absolute;
 	right:-110px;
 	top:0;
+	line-height: 40px;
+	text-align: center;
 	
 }
 

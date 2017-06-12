@@ -1,0 +1,241 @@
+.con2 .navList{
+	width:198px;
+	height:450px;
+	position: absolute;
+	left:0;	
+	background:#e5004a;
+	padding-left:2px;
+	z-index: 1;
+	display: none;
+}
+
+.con2 .nav1:hover .navList{
+	display: block;
+}
+
+
+#main{
+	background:#f3f3f3;
+}
+#main .content{
+	width:1200px;
+	margin:0 auto;
+}
+#main .content .con-1{
+	height:35px ;
+	line-height: 35px;
+	
+}
+#main .content .con-1 a{
+	font-size:12px;
+	color: #666666;
+}
+#main .content .con-1 a:hover{
+	color: #e5004b;
+}
+#main .content .con-2{
+	width:1180px;
+	height: 545px;
+	background: #fff;
+	margin:0 auto;
+	padding:10px;
+	display: flex;
+}
+#main .content .con-2 .left{
+	width:445px;
+	height:550px;
+	position:relative;
+}
+
+#main .content .con-2 .left #mArea img{
+	width:443px;
+	height:440px;
+	border:1px solid #ccc;
+	position: relative;
+}
+#main .content .con-2 .left ul{
+	margin-top:6px;
+	margin-left:5px;
+}
+#main .content .con-2 .left ul li{
+	float: left;
+	list-style: none;
+	padding:4px;
+	margin:0 3px;
+	border: 1px solid #cecece;
+}
+#main .content .con-2 .left ul li img{
+	width:70px;
+	height:70px;
+}
+#main .content .con-2 .left ul li:hover{
+	border:2px solid red;
+}
+#main .content .con-2 .left #bArea{
+	width:400px;
+	height:400px;
+	border:1px solid #ccc;
+	position: absolute;
+	top:0px;
+	left:450px;
+	overflow: hidden;
+	display: none;
+}
+#main .content .con-2 .left #bArea img{
+	width:620px;
+	height:620px;
+	position: absolute;
+	background: #fff;
+}
+
+#main .content .con-2 .left #mArea #fdj{
+	width:200px;
+	height:200px;
+	background:#fff;
+	border:1px solid #999999;
+	opacity: .6;
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
+}
+
+#main .content .con-2 .right{
+	padding: 17px 13px 0 24px;
+	width:755px;
+	
+}
+
+#main .content .con-2 .right .r-1 p:nth-of-type(1){
+	font-size: 20px;
+	color:#999999;
+	line-height: 32px;
+}
+
+#main .content .con-2 .right .r-1 p:nth-of-type(2) span:nth-of-type(1){
+	font-size: 18px;
+	color:red;
+	font-weight: bold;
+	line-height: 32px;
+}
+#main .content .con-2 .right .r-1 p:nth-of-type(2) span:nth-of-type(2){
+	font-size: 24px;
+	color:#000000;
+	font-weight: bold;
+	line-height: 32px;
+}
+#main .content .con-2 .right .r-2{
+	width:650px;
+	height:52px;
+	background: #f9f9f9;
+	padding:15px;
+	line-height: 30px;
+	color:#666666;
+}
+#main .content .con-2 .right .r-2 p:nth-of-type(1) span{
+	font-size: 16px;
+	font-weight: bold;
+	color:red;
+	margin-left:60px;
+}
+
+#main .content .con-2 .right .r-2 p:nth-of-type(2) span{
+	text-decoration: line-through;
+	margin-left:60px;
+}
+
+#main .content .con-2 .right .r-3{
+	width:650px;
+	padding:15px;
+	line-height: 24px;
+	color:#666666;
+	font-size: 14px;
+}
+#main .content .con-2 .right .r-3 ul li{
+	margin:15px 0;
+}
+#main .content .con-2 .right .r-3 ul li span{
+	margin:0 15px;
+}
+
+#main .content .con-2 .right .r-3 ul li span:nth-of-type(1){
+	width:35px;
+	margin-right:65px;
+}
+#main .content .con-2 .right .r-3 ul li:nth-of-type(2) span:nth-of-type(2) span{
+	border: 1px solid #DDDDDD;
+	padding:5px;
+}
+#main .content .con-2 .right .r-3 ul li:nth-of-type(2) span:nth-of-type(3){
+	margin-left:-15px;
+}
+
+#main .content .con-2 .right .r-3 ul li:nth-of-type(3) span:nth-of-type(2){
+	border: 1px solid #ff9900;
+	padding:3px;
+}
+
+#main .content .con-2 .right .r-3 ul li:nth-of-type(3) span:nth-of-type(3){
+	border: 1px solid #DDDDDD;
+	padding:3px;
+}
+
+
+#main .content .con-2 .right .r-3 ul li:nth-of-type(4) span:nth-of-type(2){
+	display: inline-block;
+	margin-left:-12px;
+}
+
+#main .content .con-2 .right .r-3 ul li:nth-of-type(4) span:nth-of-type(2) input:nth-of-type(1),
+#main .content .con-2 .right .r-3 ul li:nth-of-type(4) span:nth-of-type(2) input:nth-of-type(3){
+	border:1px solid #dddddd;
+	width:20px;
+	height:20px;
+}
+#main .content .con-2 .right .r-3 ul li:nth-of-type(4) span:nth-of-type(2) input:nth-of-type(2){
+	border:1px solid #dddddd;
+	width:50px;
+	height:20px;
+	text-align: center;
+}
+#main .content .con-2 .right .r-3 ul li:nth-of-type(4) span:nth-of-type(3) b{
+	color:#ff9900;
+}
+
+#main .content .con-2 .right .r-4{
+	width:650px;
+	line-height: 24px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#main .content .con-2 .right .r-4 input:nth-of-type(1){
+	border: 0;
+	background: #e5004b;
+	width:130px;
+	height:40px;
+	color:#fff;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left:-30px;
+	
+}
+#main .content .con-2 .right .r-4 input:nth-of-type(2){
+	border: 1px solid #e5004b;
+	background: #fff;
+	width:160px;
+	height:40px;
+	color:#e5004b;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left:15px;
+	
+}
+#main .content .con-2 .right .r-4 a{
+	
+	color:#009aff;
+	font-size: 12px;
+	cursor: pointer;
+	margin-left:15px;
+	
+}

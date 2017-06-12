@@ -1,0 +1,153 @@
+.con2 .navList{
+	width:198px;
+	height:450px;
+	position: absolute;
+	left:0;	
+	background:#e5004a;
+	padding-left:2px;
+	z-index: 1;
+	display: none;
+}
+
+.con2 .nav1:hover .navList{
+	display: block;
+}
+#main{
+	background: #f3f3f3;
+}
+#main .m-1 {
+	width:1200px;
+	height:30px;
+	margin:0 auto;
+	line-height: 30px;
+	
+}
+#main .content{
+	width:1200px;
+	height: 500px;
+	margin:0 auto;
+	background: #fff;
+	padding:10px 0;
+}
+#main .content .cart1{
+	position: relative;
+}
+#main .content .cart1 ul li{
+	height:65px;
+	border-bottom: 1px solid #cecece;
+}
+#main .content .cart1 ul li img{
+	width:60px;
+	height:60px;
+	float: left;
+	
+}
+#main .content .cart1 ul li input:nth-of-type(1){
+	width:20px;
+	height: 20px;
+	float: left;
+	line-height: 60px;
+	margin-left:30px;
+}
+#main .content .cart1 ul li span{
+	margin:0 20px;
+	float: left;
+	line-height: 60px;
+}
+#main .content .cart1 ul li span:nth-of-type(3) input:nth-of-type(1),
+#main .content .cart1 ul li span:nth-of-type(3) input:nth-of-type(3){
+	border:0;
+	width:20px;
+	height:25px;
+	position: absolute;
+	line-height: 25px;
+}
+#main .content .cart1 ul li span:nth-of-type(3) input:nth-of-type(2){
+	width:60px;
+	height:20px;
+	text-align: center;
+	
+}
+
+#main .content .cart1 ul li span:nth-of-type(3) input:nth-of-type(1){
+	left:426px;
+	top:20px;
+}
+#main .content .cart1 ul li span:nth-of-type(3) input:nth-of-type(3){
+	left:500px;
+	top:20px;
+}
+#main .content .pay{
+	width:1200px;
+	margin:20px auto;
+	
+	
+}
+#main .content .pay input{
+	background: #e5004a;
+	width:60px;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	border: 0;
+	margin-left:500px;
+	cursor: pointer;
+}
+
+/*---------侧边栏-----------------*/
+aside{
+	width:35px;
+	height:800px;
+	position: fixed;
+	right:0;
+	top:0;
+	background:#e5004a;	
+}
+
+aside .list4{
+	margin-top:300px;	
+}
+
+aside .list4 li{
+	margin:25px 0 25px 5px;
+	position: relative;
+} 
+aside .list4 li:nth-of-type(5){
+	margin-top:260px;
+} 
+
+aside .list4 li a{
+	font-family: 'iconfont';
+	font-size: 24px;
+	color:#fff;
+}
+
+aside .list4 li span{
+	width:70px;
+	height:25px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #fff;
+	background: #c098f6;
+	text-align: center;
+	position:absolute;
+	right:-70px;
+}
+aside .list4 li:nth-of-type(4) .num1{
+	width:20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fff;
+	text-align: center;
+	position: absolute;
+	right:0;
+	top:-10px;
+}
+aside .list4 li:nth-of-type(4) .num1 b{
+	color:#e5004a;
+	font-weight: 100;
+	line-height: 20px;
+}
+
+
+

@@ -1,5 +1,5 @@
 footer{
-	margin-top:30px;
+	
 	background: #e5004b;
 }
 footer .foo1{
@@ -38,7 +38,7 @@ footer .foo2 .nav2 ul li a{
 	line-height: 24px;
 }
 footer .foo2 .nav2 ul li:hover a{
-	color: red;
+	color: #e5004b;
 }
 footer .foo2 .nav2 .nav2-1,footer .foo2 .nav2 .nav2-2,
 footer .foo2 .nav2 .nav2-3,footer .foo2 .nav2 .nav2-4,
@@ -70,7 +70,7 @@ footer .foo3 .nav3 ul li{
 	
 }
 footer .foo3 .nav3 ul li:hover a{
-	color:red;
+	color:#e5004b;
 }
 footer .foo3 .nav3 ul li a{
 	color:#666666;
@@ -83,6 +83,9 @@ footer .foo3 .nav3 div{
 footer .foo3 .nav3 div p{
 	margin-bottom: 10px;
 }
+
+
+
 
 /*---------侧边栏-----------------*/
 aside{
@@ -133,7 +136,7 @@ aside .list4 li:nth-of-type(4) .num1{
 	right:0;
 	top:-10px;
 }
-aside .list4 li:nth-of-type(4) .num1 b{
+aside .list4 li:nth-of-type(4) .num1 {
 	color:#e5004a;
 	font-weight: 100;
 	line-height: 20px;

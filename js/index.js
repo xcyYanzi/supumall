@@ -1,5 +1,21 @@
-
-/*---main2---*/
+/*------------main1-----------*/
+var timer2 = setInterval(function(){
+		var dd = new Date();
+		var tim = new Date("2017-6-3 08:00:00");
+		var cha = tim - dd;
+		var hh=Math.floor(cha/(1000*60*60));
+		var mm=Math.floor((cha%(1000*60*60))/(1000*60));
+		var ss=Math.floor((cha-hh*1000*60*60-mm*1000*60)/1000);
+		hh=hh<10?"0"+hh:hh;
+		mm=mm<10?"0"+mm:mm;
+		ss=ss<10?"0"+ss:ss;
+		var str="距结束<br/>"+hh+":"+mm+":"+ss;
+		$(".time_list1 ")[0].innerHTML = str;
+		if(cha<1000){
+			clearInterval(timer1);
+		}
+	},1000);
+/*--------------main2-----------*/
 $(function(){
 	$.get("../json/main02.json",function(data){
 		var data = data;
@@ -24,7 +40,7 @@ $(function(){
 
 	var timer2 = setInterval(function(){
 		var dd = new Date();
-		var tim = new Date("2017-6-30 00:00:00");
+		var tim = new Date("2017-6-28 00:00:00");
 		var cha = tim - dd;	
 		var str = timeSpike(tim);
 		$(".djs ")[2].innerHTML = str;
@@ -77,12 +93,12 @@ $(function(){
 		
 		
 		$(".timeGroup .time ul li").click(function(){
-			$(this).find(".t_point").css("background","yellow");
-			
+			$(this).find(".t_point").css("border","1px solid #ff8a00").parent().siblings().find(".t_point").css("border","1px solid #ededed");
+			$(this).find(".t_point div").css("background","#ff8a00").parent().parent().siblings().find(".t_point div").css("background","#ededed");
 			var i = $(this).index();
 			$.get("../json/main01.json",function(data){
 				var html = template("goods",data[i]);
-				console.log($(".goodsList1")[0]);
+				//console.log($(".goodsList1")[0]);
 				$(".goodsList1")[0].innerHTML=html;	
 			})
 		})

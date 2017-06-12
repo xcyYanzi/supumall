@@ -1,4 +1,15 @@
 /*----banner------*/
+.con2 .navList{
+	width:198px;
+	height:450px;
+	position: absolute;
+	left:0;	
+	background:#e5004a;
+	padding-left:2px;
+	z-index: 1;
+	display: block;
+}
+
 #banner {
 	width: 100%;
 	height: 448px;
@@ -139,12 +150,28 @@
 	text-align: center;
 	color: #666;
 	font-weight: 600;
+	position: relative;
 	
 }
 .tody-sales .timeGroup .time .t1{
-	line-height: 24px;
 	display: none;
 }
+.tody-sales .timeGroup .time ul li:hover .t1{
+	position: absolute;
+	left: 25px;
+	top:-10px;
+	display: block;
+	background: url(../img/main1/tip_bg.png) no-repeat 0 0 ;
+	background-size: contain;
+	color:#fff;
+	font-size: 12px;
+	width:80px;
+	height: 30px;
+}
+.tody-sales .timeGroup .time ul li:hover .time_list1{
+	display: none;
+}
+
 .tody-sales .timeGroup .time .t_end{
 	line-height: 24px;
 	display: none;
@@ -172,6 +199,8 @@
 	border-radius: 50%;
 	margin:3px;
 }
+
+
 .tody-sales .timeGroup .time ul .time_list1{
 	line-height: 24px;	
 }
@@ -215,7 +244,7 @@
 	height:220px;
 	background: url(../img/main1/layer.png) no-repeat 0 0;
 	position: absolute;
-	left:10px;
+	left:0px;
 	top:0;
 }
 .tody-sales .goods .goodsList1 ul li .goods1{
@@ -243,7 +272,7 @@
 }
 .tody-sales .goods .goodsList1 ul li:hover .goods1 div:nth-of-type(2) input{
 
-	transform: translateX(150px);
+	transform: translateX(145px);
 	transition:all 1s;
 }
 
@@ -313,6 +342,7 @@
 #main .main2 .goodsList{
 	float:left;
 	margin:5px;
+	cursor: pointer;
 }
 #main .main2 .goodsList .theme{
 	width:588px;
@@ -937,7 +967,31 @@
 	cursor: pointer;
 }
 
+/*---------广告页--------------*/
 
+.adver{
+	width:100%;
+	height:100px;
+	background:rgba(35,30,30,0.7);
+	position: fixed;
+	bottom: 0;
+	left:0;
+	padding-top:20px;
+	
+	
+}
+.adver .ad-con{
+	width:960px;
+	margin:0 auto;
+	position: relative;
+	cursor: pointer;
+}
+.adver .ad-con img:nth-of-type(1){
+	position: absolute;
+	right:-20px;
+	top:-10px;
+	cursor: pointer;
+}
 
 
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+			})
+		</script>
+	</head>
+	<body>
+		<div id="header"></div>
+		
+		<div id="main">
+			<div class="m-1"><span>我的购物车</span></div>
+			<div class="content">
+				<div class="cart1">
+					<ul>
+						<li>
+							<input type="checkbox" checked="checked"/>
+							<img src="../img/product/pro1.jpg" />
+							<span>THEMOS膳魔师</span>
+							<span>型号：JBL-200PD</span>
+							<span><form>
+								<input type="button" value="-" />
+								<input type="text" value="1" />
+								<input type="button" value="+" />
+							</form></span>
+							<span>￥259</span>
+							<span><a href="">删除</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="pay">
+					<input type="button" value="去结算" />
+				</div>
+			</div>
+			
+		</div>
+		<div id="footer"></div>
+		
+		
+	</body>
+</html>

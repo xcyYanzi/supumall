@@ -5,7 +5,9 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/comment.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
-
+		<script src="../js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/header.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<header>
@@ -44,7 +46,7 @@
 			<div class="nav-con">
 				<div class="con1">	
 					<div class="logo">
-						<a href="../index.html">
+						<a href="index.html">
 							<img src="../img/header/logo (1).jpg" />
 						</a>
 					</div> 	
@@ -75,33 +77,111 @@
 				<div class="con2">
 					<div class="nav1">
 						全部商品分类
-						
 						<ul class="navList">
 							<li>
-								<span></span>
-								<a href="">妈妈专区</a>
-								<span></span>
+								<span></span><a href="">妈妈专区</a><span></span>
 								<div class="area1">
-									<p>孕期营养</p>
-									<a href="">维生素</a>
-									<a href="">维生素</a>
-									<a href="">维生素</a>
-									
-									
+									<!--<div>
+										<!--<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+				
 								</div>
 							</li>
-							<li><span></span><a href="">奶粉专区</a><span></span></li>
-							<li><span></span><a href="">辅食专区</a><span></span></li>
-							<li><span></span><a href="">尿裤湿巾</a><span></span></li>
-							<li><span></span><a href="">喂养洗护</a><span></span></li>
-							<li><span></span><a href="">玩具图书</a><span></span></li>
-							<li><span></span><a href="">车床寝具</a><span></span></li>
-							<li><span></span><a href="">婴儿服饰</a><span></span></li>
-							<li><span></span><a href="">美食专区</a><span></span></li>
-							<li><span></span><a href="">美妆日用</a><span></span></li>
+							<li><span></span><a href="">奶粉专区</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
+							<li><span></span><a href="">辅食专区</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
+							<li><span></span><a href="">尿裤湿巾</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
+							<li><span></span><a href="">喂养洗护</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
+							<li><span></span><a href="">玩具图书</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
+							<li><span></span><a href="">车床寝具</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
+							<li><span></span><a href="">婴儿服饰</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
+							<li><span></span><a href="">美食专区</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
+							<li><span></span><a href="">美妆日用</a><span></span>
+								<div class="area1">
+									<!--<div>
+										<b>孕期营养</b>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+										<a href="">维生素</a>
+									</div>-->
+								</div>
+							</li>
 							<div><img src="../img/header/cate_menu_bottom.jpg"/></div>
 						</ul>
-	
 					</div>
 					<div class="list3">
 						<ul >
@@ -115,6 +195,30 @@
 				</div>
 			</div>
 		</nav>
+		
+		<script id="pro" type="text/html">
+					<!--{{each img1 as value }}	
+					<div class="goodsList">
+						<div class="theme">					
+							<img src={{value.imgs[0]}}/>
+							<div class="active"><img src={{value.imgs[1]}}/></div>
+							<div>{{value.imgs[2]}}</div>
+							<div>{{value.imgs[3]}}</div>
+						</div>
+						<div class="djs">倒计时</div>
+					</div>
+					{{/each}}-->
+					<div class="area1">
+						{{each Lists as value}}
+							<div>
+								<b>{{value.title}}</b>
+								{{each value.productList as item}}
+									<a href="">{{item}}</a>
+								{{/each}}
+							</div>	
+						{{/each}}
+					</div>
+				</script>
 		
 		
 	</body>
